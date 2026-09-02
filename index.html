@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internet Segura</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+            <h1>Internet Segura</h1>
+
+            <div class="acessibilidade">
+                <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+                    A+
+                </button>
+
+                <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+                    A-
+                </button>
+
+                <button onclick="lerPagina()" aria-label="Ler página em voz alta">
+                    🔊 Ler página
+                </button>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#ajuda">Ajuda rápida</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#direitos">Meus direitos</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="introducao">
+            <h2>Bem-vindo à Internet Segura</h2>
+
+            <p>
+                Este site foi criado para ajudar você a navegar pela internet
+                com mais segurança, tranquilidade e confiança.
+            </p>
+
+            <p>
+                Aqui você encontrará dicas simples, orientações e informações
+                sobre seus direitos na internet.
+            </p>
+        </section>
+
+
+        <section id="ajuda" class="ajuda">
+            <h2>🆘 Precisa de ajuda?</h2>
+
+            <p>
+                Clique em uma das opções abaixo para saber como agir.
+            </p>
+
+            <div class="botoes-ajuda">
+
+                <button onclick="mostrarAlerta('Golpe')">
+                    🚨 Acho que caí em um golpe
+                </button>
+
+                <button onclick="mostrarAlerta('Senha')">
+                    🔐 Minha senha foi descoberta
+                </button>
+
+                <button onclick="mostrarAlerta('Mensagem')">
+                    📱 Recebi uma mensagem suspeita
+                </button>
+
+            </div>
+        </section>
+
+
+        <section id="dicas" class="conteudo">
+
+            <h2>💡 Dicas para usar a internet com segurança</h2>
+
+            <article>
+                <h3>🔑 Use senhas fortes</h3>
+
+                <p>
+                    Evite usar senhas fáceis de adivinhar. Não compartilhe
+                    suas senhas com outras pessoas.
+                </p>
+            </article>
+
+            <article>
+                <h3>⚠️ Desconfie de mensagens urgentes</h3>
+
+                <p>
+                    Golpistas podem tentar assustar ou pressionar você.
+                    Antes de clicar em um link, verifique quem enviou.
+                </p>
+            </article>
+
+            <article>
+                <h3>🔗 Cuidado com links desconhecidos</h3>
+
+                <p>
+                    Não clique em links recebidos de pessoas ou números
+                    desconhecidos sem verificar a origem.
+                </p>
+            </article>
+
+            <article>
+                <h3>📞 Confirme antes de fazer pagamentos</h3>
+
+                <p>
+                    Se alguém pedir dinheiro ou informações pessoais,
+                    confirme a identidade da pessoa por outro meio.
+                </p>
+            </article>
+
+        </section>
+
+
+        <section id="direitos" class="direitos">
+
+            <h2>⚖️ Seus direitos na internet</h2>
+
+            <article>
+                <h3>Marco Civil da Internet</h3>
+
+                <p>
+                    O Marco Civil da Internet estabelece princípios, direitos
+                    e deveres para o uso da internet no Brasil.
+                </p>
+            </article>
+
+            <article>
+                <h3>LGPD</h3>
+
+                <p>
+                    A Lei Geral de Proteção de Dados (LGPD) estabelece regras
+                    para o tratamento de dados pessoais e busca proteger a
+                    privacidade das pessoas.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Internet Segura — Informação para uma internet mais segura.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+              </html>
