@@ -1,1 +1,184 @@
+* {
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #174ea6;
+    color: white;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    gap: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.acessibilidade {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.acessibilidade button {
+    background-color: white;
+    color: #174ea6;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: bold;
+}
+
+.acessibilidade button:hover {
+    background-color: #e8f0fe;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 5% 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #0d3b7d;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #174ea6;
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.introducao {
+    text-align: center;
+}
+
+.botoes-ajuda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botoes-ajuda button {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 22px;
+    font-weight: bold;
+    min-height: 65px;
+}
+
+.botoes-ajuda button:hover {
+    background-color: #a51f1f;
+}
+
+.conteudo article,
+.direitos article {
+    border-left: 6px solid #174ea6;
+    background-color: #f7f9fc;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.direitos article {
+    border-left-color: #2e7d32;
+}
+
+footer {
+    background-color: #174ea6;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+
+    .topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acessibilidade {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .acessibilidade button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .botoes-ajuda {
+        flex-direction: column;
+    }
+
+    .botoes-ajuda button {
+        width: 100%;
+    }
+}
